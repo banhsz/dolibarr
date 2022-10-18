@@ -1833,7 +1833,7 @@ class Thirdparties extends DolibarrApi
 	 *
 	 * @throws RestException
 	 */
-	private function _validate($data)
+	protected function _validate($data)
 	{
 		$thirdparty = array();
 		foreach (Thirdparties::$FIELDS as $field) {
@@ -1866,7 +1866,7 @@ class Thirdparties extends DolibarrApi
 	 *
 	 * @throws RestException
 	 */
-	private function _fetch($rowid, $ref = '', $ref_ext = '', $barcode = '', $idprof1 = '', $idprof2 = '', $idprof3 = '', $idprof4 = '', $idprof5 = '', $idprof6 = '', $email = '', $ref_alias = '')
+	protected function _fetch($rowid, $ref = '', $ref_ext = '', $barcode = '', $idprof1 = '', $idprof2 = '', $idprof3 = '', $idprof4 = '', $idprof5 = '', $idprof6 = '', $email = '', $ref_alias = '')
 	{
 		global $conf;
 
